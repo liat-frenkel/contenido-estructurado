@@ -8,16 +8,19 @@
 */
 
 :root {
-  --color-background: #f4f4f0;
-  --color-text: #171717;
-  --color-accent: #5b3df5;
+  --color-background: #ffc7e0;
+  --color-text: #000;
+  --color-accent: #247c00;
+  --title-color: #3ee500;
 
-  --font-family-base: system-ui, Arial, Helvetica, sans-serif;
+  --font-family-base: "adelle-mono", monospace;
 
   --font-size-body: 1rem;
-  --font-size-h1: 3rem;
-  --font-size-h2: 2rem;
+  --font-size-h1: 9vw;
+  --font-size-h2: 3rem;
   --font-size-h3: 1.25rem;
+
+--typo-title: "kuhlman-vf", sans-serif;
 }
 
 /*
@@ -30,11 +33,6 @@
 
 * {
   box-sizing: border-box;
-  /*
-    Regla temporal para visualizar las cajas.
-    Puede eliminarse cuando ya no sea necesaria.
-  */
-  outline: 1px solid;
 }
 
 
@@ -53,6 +51,7 @@ body {
 
   font-family: var(--font-family-base);
   font-size: var(--font-size-body);
+  text-align: left;
 }
 
 /*
@@ -65,11 +64,18 @@ body {
 */
 
 h1 {
+  text-align: center;
   font-size: var(--font-size-h1);
+  color: var(--title-color);
+  font-family: var(--typo-title);
+  font-weight: 400;
+  line-height: 1.24em;
 }
 
 h2 {
+  text-align: center;
   font-size: var(--font-size-h2);
+  color: var(--title-color);
 }
 
 h3 {
@@ -125,10 +131,20 @@ footer {
   padding: 2rem;
 }
 
+p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 section {
   margin-bottom: 3rem;
 }
 
+nav {
+  text-align: center;
+}
+
 nav a {
   margin-right: 1rem;
+  font-size: 3vw
 }
