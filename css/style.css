@@ -36,6 +36,7 @@
 }
 
 
+
 /*
   ============================================================
   BODY
@@ -44,7 +45,8 @@
   Define el sistema visual base del documento.
 */
 body {
-  margin: 0;
+  max-width: 100%;
+  margin: 5%;
 
   background-color: var(--color-background);
   color: var(--color-text);
@@ -54,6 +56,20 @@ body {
   text-align: left;
 }
 
+.hero {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  padding: 2rem;
+  text-align: left;
+  border-radius: 2rem;
+}
+.hero a {
+  color: var(--color-background);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--color-background);
+}
 /*
   ============================================================
   JERARQUÍA TIPOGRÁFICA
