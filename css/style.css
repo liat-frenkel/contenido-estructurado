@@ -8,16 +8,19 @@
 */
 
 :root {
-  --color-background: #ffc7e0;
-  --color-text: #000;
-  --color-accent: #247c00;
-  --title-color: #3ee500;
+  --color-background: #f4dcec;
+  --color-text: #731844;
+  --color-accent: #731844;
+  --title-color: #FF3598;
+  --subtitle-color: #B3256A;
+  --color-h2: #731844;
+  --color-block: #03260A;
 
   --font-family-base: "adelle-mono", monospace;
 
   --font-size-body: 1rem;
   --font-size-h1: 9vw;
-  --font-size-h2: 3rem;
+  --font-size-h2: 5vw;
   --font-size-h3: 1.25rem;
 
 --typo-title: "kuhlman-vf", sans-serif;
@@ -35,7 +38,9 @@
   box-sizing: border-box;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 /*
   ============================================================
@@ -56,20 +61,92 @@ body {
   text-align: left;
 }
 
+
 .hero {
-  background-color: var(--color-accent);
+  background-color: var(--color-block);
   color: var(--color-background);
   padding: 2rem;
-  text-align: left;
+  text-align: center;
   border-radius: 2rem;
+  padding-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 .hero a {
   color: var(--color-background);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
-  border-bottom: 2px solid var(--color-background);
+  border: 2px solid var(--color-background);
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
+.hero p {
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  margin-bottom: 2rem;
+  margin: 3rem;
+}
+
+.conti{
+  background-color: #FFAC30;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+
+}
+
+.conti p {
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem auto;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .conti p {
+    text-align: left;
+  }
+}
+.conti h2{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+.info-drink{
+  text-align: left;
+  background-color: #FFAC30;
+  border-radius: 2rem;
+padding: 2rem;
+}
+
+.info-drink p{
+  text-align: left;
+  
+}
+
+.info-drink h2{
+  padding: 0;
+  margin: 0;
+  font-size: 4vw;}
+
+  .historia p{
+  margin: 0 auto;
+ max-width: 950px;
+}
+
+.historia h2{
+ font-size: 4vw;
+}
+
+img{
+ margin: 0 auto;
+ display: block;
+}
+
 /*
   ============================================================
   JERARQUÍA TIPOGRÁFICA
@@ -90,8 +167,12 @@ h1 {
 
 h2 {
   text-align: center;
+  font-family: var(--typo-title);
   font-size: var(--font-size-h2);
-  color: var(--title-color);
+  color: var(--color-h2);
+  margin-bottom: 0rem;
+  margin-top: 4rem;
+  padding-top: 2rem;
 }
 
 h3 {
@@ -107,8 +188,32 @@ h3 {
   El color de acento identifica enlaces y acciones.
 */
 
+.sectcont {
+  background-color: #FFAC30;
+  border-radius: 2rem;
+ padding: 2rem;
+}
+
+.sectcont a {
+  border: 0px solid var(--title-color);
+  
+}
+
+.sectcont ul {
+  line-height: 2.5rem;
+  
+}
+
 a {
+  text-align: center;
   color: var(--color-accent);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid var(--title-color);
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
 
 
@@ -127,11 +232,16 @@ a {
   distribuye el espacio horizontal y centra la caja.
 */
 
-main {
+#main-home {
   width: 65%;
   min-width: 290px;
   max-width: 1240px;
   margin: 0 auto;
+}
+
+main {
+margin-top: 2rem;
+margin-bottom: 2rem;
 }
 
 
@@ -141,14 +251,14 @@ main {
   ============================================================
 */
 
-header,
-main,
+
 footer {
   padding: 2rem;
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
+  margin-top: 0rem;
   text-align: center;
 }
 
@@ -163,4 +273,9 @@ nav {
 nav a {
   margin-right: 1rem;
   font-size: 3vw
+}
+
+li {
+  margin-bottom: .5rem;
+  margin-top: 0.5rem;
 }
